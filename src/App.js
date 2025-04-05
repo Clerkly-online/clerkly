@@ -2,7 +2,7 @@ import React from "react";
 import "./App.css";
 
 function App() {
-  return (
+  
     <div className="min-h-screen bg-white text-gray-900 font-sans">
       <header className="bg-orange-500 text-white py-12 px-6 text-center">
         <h1 className="text-4xl font-bold">Clerkly™</h1>
