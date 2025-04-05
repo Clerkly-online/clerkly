@@ -3,33 +3,19 @@ import "./App.css";
 
 function App() {
   
-    <div className="min-h-screen bg-white text-gray-900 font-sans">
-      <header className="bg-orange-500 text-white py-12 px-6 text-center">
-        <h1 className="text-4xl font-bold">Clerkly™</h1>
-        <p className="text-xl mt-2">Dein digitaler Papierkram-Assistent. Einfach. Schnell. Automatisch.</p>
-        <button className="mt-6 bg-white text-orange-500 font-semibold py-2 px-6 rounded-full hover:bg-orange-100">
-          Jetzt eintragen für Beta-Zugang
-        </button>
-      </header>
-
-      <section className="py-16 px-6 text-center">
-        <h2 className="text-3xl font-semibold mb-6">Was kann Clerkly™?</h2>
-        <div className="grid md:grid-cols-3 gap-8">
-          <div className="bg-gray-100 p-6 rounded-xl shadow">
-            <h3 className="text-xl font-bold">Dokumente verstehen</h3>
-            <p className="mt-2">Foto oder Upload → Clerkly erklärt, was du damit tun musst.</p>
-          </div>
-          <div className="bg-gray-100 p-6 rounded-xl shadow">
-            <h3 className="text-xl font-bold">Kündigungen & Anfragen schreiben</h3>
-            <p className="mt-2">Clerkly erstellt professionelle Schreiben mit einem Klick.</p>
-          </div>
-          <div className="bg-gray-100 p-6 rounded-xl shadow">
             <h3 className="text-xl font-bold">Fristen merken & erinnern</h3>
             <p className="mt-2">Clerkly bewahrt dich vor verpassten Rückgaben, Zahlungen und Deadlines.</p>
           </div>
         </div>
       </section>
 
+
+
+
+
+
+
+              
       <section className="bg-gray-50 py-16 px-6 text-center">
         <h2 className="text-3xl font-semibold mb-6">Warum Clerkly?</h2>
         <ul className="max-w-3xl mx-auto space-y-4 text-left">
