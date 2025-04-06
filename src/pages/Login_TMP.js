@@ -1,38 +1,39 @@
-// src/pages/Login_TMP.js
 import React, { useState } from "react";
-import styles from "./Login.module.css";
+import { signInWithEmailAndPassword } from "firebase/auth";
+import { auth } from "../firebase";
+import { useNavigate } from "react-router-dom";
 
 function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const navigate = useNavigate();
 
-  const handleLogin = (e) => {
+  const handleLogin = async (e) => {
     e.preventDefault();
-    // Hier kannst du die Firebase Auth Logik reinballern
-    console.log("Einloggen mit", email, password);
+    try {
+      await signInWithEmailAndPassword(auth, email, password);
+      navigate("/"); // 👈 Weiterleitung nach Login
+    } catch (error) {
+      console.error("Login failed:", error.message);
+      alert("Fehler: " + error.message);
+    }
   };
 
   return (
-    <div className={styles.container}>
-      <h2 className={styles.title}>Login</h2>
-      <form onSubmit={handleLogin} className={styles.form}>
+    <div>
+      <h2>Login</h2>
+      <form onSubmit={handleLogin}>
         <input
           type="email"
           placeholder="Email"
-          value={email}
           onChange={(e) => setEmail(e.target.value)}
-          className={styles.input}
         />
         <input
           type="password"
           placeholder="Passwort"
-          value={password}
           onChange={(e) => setPassword(e.target.value)}
-          className={styles.input}
         />
-        <button type="submit" className={styles.button}>
-          Einloggen
-        </button>
+        <button type="submit">Einloggen</button>
       </form>
     </div>
   );
