@@ -1,26 +1,26 @@
-.container {
-  padding: 2rem;
-  color: #c9d1d9;
-  background-color: #0d1117;
-  min-height: 100vh;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+import React from "react";
+import styles from "./Dashboard.module.css";
+
+function Dashboard() {
+  return (
+    <div className={styles.container}>
+      <h1 className={styles.header}>Willkommen bei Clerkly!</h1>
+
+      <section className={styles.section}>
+        <label className={styles.label}>🧠 Nächste Deadline:</label>
+        <p>10. April 2025 – Umsatzsteuervoranmeldung</p>
+      </section>
+
+      <section className={styles.section}>
+        <label className={styles.label}>📅 Deine To-Dos:</label>
+        <ul>
+          <li>Belege hochladen</li>
+          <li>Steuerberater anrufen</li>
+          <li>Kaffee trinken (sehr wichtig)</li>
+        </ul>
+      </section>
+    </div>
+  );
 }
 
-.header {
-  font-size: 2rem;
-  margin-bottom: 1.5rem;
-  color: #58a6ff;
-}
-
-.section {
-  background-color: #161b22;
-  padding: 1rem;
-  border-radius: 8px;
-  margin-bottom: 1rem;
-}
-
-.label {
-  font-weight: bold;
-  margin-bottom: 0.5rem;
-  display: block;
-}
+export default Dashboard;
