@@ -1,13 +1,26 @@
-import React from "react";
-import styles from "./Dashboard.module.css";
-
-function Dashboard() {
-  return (
-    <div className={styles.container}>
-      <h1 className={styles.heading}>Willkommen auf deinem Dashboard</h1>
-      <p className={styles.text}>Hier kannst du Rückgaben, Zahlungen und Deadlines sehen.</p>
-    </div>
-  );
+.container {
+  padding: 2rem;
+  color: #c9d1d9;
+  background-color: #0d1117;
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-export default Dashboard;
+.header {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #58a6ff;
+}
+
+.section {
+  background-color: #161b22;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.label {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  display: block;
+}
