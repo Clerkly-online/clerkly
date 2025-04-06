@@ -1,0 +1,16 @@
+.container {
+    padding: 40px;
+    text-align: center;
+  }
+  
+  .heading {
+    font-size: 32px;
+    color: #111827;
+    margin-bottom: 20px;
+  }
+  
+  .text {
+    font-size: 18px;
+    color: #4b5563;
+  }
+  
