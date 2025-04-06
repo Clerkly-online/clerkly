@@ -1,45 +1,52 @@
-/* src/pages/Login.module.css */
+/* Login.module.css */
 .container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
-  background-color: #121212;
-  color: #fff;
+  height: 100vh;
+  background-color: #111827;
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .title {
   font-size: 2rem;
   margin-bottom: 1rem;
+  color: #ffffff;
 }
 
-.form {
+.inputGroup {
+  margin-bottom: 1rem;
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  width: 300px;
 }
 
-.input {
+.inputGroup label {
+  margin-bottom: 0.25rem;
+  font-size: 0.875rem;
+  color: #d1d5db;
+}
+
+.inputGroup input {
   padding: 0.5rem;
-  border: 1px solid #444;
+  border: 1px solid #374151;
   border-radius: 4px;
-  background-color: #1e1e1e;
-  color: #fff;
-  width: 250px;
+  background-color: #1f2937;
+  color: white;
 }
 
 .button {
-  padding: 0.6rem;
+  padding: 0.5rem 1rem;
+  background-color: #2563eb;
+  color: white;
   border: none;
   border-radius: 4px;
-  background-color: #00aaff;
-  color: #fff;
-  font-weight: bold;
   cursor: pointer;
-  transition: background 0.2s ease;
+  transition: background-color 0.3s ease;
 }
 
 .button:hover {
-  background-color: #0088cc;
+  background-color: #1d4ed8;
 }
