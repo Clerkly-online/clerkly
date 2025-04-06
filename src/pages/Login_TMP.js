@@ -1,21 +1,36 @@
-import React from "react";
+// src/pages/Login_TMP.js
+import React, { useState } from "react";
+import styles from "./Login.module.css";
 
-function Login_TMP() {
+function Login() {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+
+  const handleLogin = (e) => {
+    e.preventDefault();
+    // Hier kannst du die Firebase Auth Logik reinballern
+    console.log("Einloggen mit", email, password);
+  };
+
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gray-100">
-      <form className="bg-white p-6 rounded shadow-md space-y-4 w-full max-w-md">
-        <h2 className="text-2xl font-bold text-center text-orange-500">Login</h2>
+    <div className={styles.container}>
+      <h2 className={styles.title}>Login</h2>
+      <form onSubmit={handleLogin} className={styles.form}>
         <input
           type="email"
           placeholder="Email"
-          className="w-full px-4 py-2 border border-gray-300 rounded"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+          className={styles.input}
         />
         <input
           type="password"
           placeholder="Passwort"
-          className="w-full px-4 py-2 border border-gray-300 rounded"
+          value={password}
+          onChange={(e) => setPassword(e.target.value)}
+          className={styles.input}
         />
-        <button className="w-full bg-orange-500 text-white py-2 rounded hover:bg-orange-600 transition">
+        <button type="submit" className={styles.button}>
           Einloggen
         </button>
       </form>
@@ -23,4 +38,4 @@ function Login_TMP() {
   );
 }
 
-export default Login_TMP;
+export default Login;
