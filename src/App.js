@@ -6,9 +6,9 @@ import {
   Navigate,
 } from "react-router-dom";
 
-import Signup from "./pages/Signup_TMP";
-import Login from "./pages/Login_TMP";
-import Dashboard from "./pages/Dashboard_TMP";
+import Signup from "./pages/Signup";
+import Login from "./pages/Login";
+import Dashboard from "./pages/Dashboard";
 
 import { onAuthStateChanged } from "firebase/auth";
 import { auth } from "./firebase";
